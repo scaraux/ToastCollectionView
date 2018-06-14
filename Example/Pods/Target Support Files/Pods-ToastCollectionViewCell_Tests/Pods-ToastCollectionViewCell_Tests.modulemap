@@ -1,0 +1,6 @@
+framework module Pods_ToastCollectionViewCell_Tests {
+  umbrella header "Pods-ToastCollectionViewCell_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

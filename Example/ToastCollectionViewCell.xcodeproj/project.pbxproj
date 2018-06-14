@@ -40,13 +40,13 @@
 		607FACE51AFB9204008FA782 /* ToastCollectionViewCell_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToastCollectionViewCell_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		634F25029F0BE035E909C21B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		7F2765B0010EAD240E5A2A0E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		634F25029F0BE035E909C21B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7F2765B0010EAD240E5A2A0E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D72F0D37DCC2B53C138A36FA /* Pods_ToastCollectionViewCell_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToastCollectionViewCell_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D870D085485C408E3975F13F /* Pods-ToastCollectionViewCell_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToastCollectionViewCell_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToastCollectionViewCell_Example/Pods-ToastCollectionViewCell_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DB74960195F2CD0412E9CAF2 /* Pods_ToastCollectionViewCell_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToastCollectionViewCell_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0F5B9C6E289C86378A517F7 /* Pods-ToastCollectionViewCell_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToastCollectionViewCell_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToastCollectionViewCell_Tests/Pods-ToastCollectionViewCell_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F219A3927E4D06BFBC736DA1 /* ToastCollectionViewCell.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ToastCollectionViewCell.podspec; path = ../ToastCollectionViewCell.podspec; sourceTree = "<group>"; };
+		F219A3927E4D06BFBC736DA1 /* ToastCollectionViewCell.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ToastCollectionViewCell.podspec; path = ../ToastCollectionViewCell.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +212,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = DBEPTECPFM;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -469,6 +470,7 @@
 			baseConfigurationReference = 475FA18373ADB305273F685C /* Pods-ToastCollectionViewCell_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DBEPTECPFM;
 				INFOPLIST_FILE = ToastCollectionViewCell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -484,6 +486,7 @@
 			baseConfigurationReference = D870D085485C408E3975F13F /* Pods-ToastCollectionViewCell_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DBEPTECPFM;
 				INFOPLIST_FILE = ToastCollectionViewCell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
