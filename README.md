@@ -5,7 +5,6 @@
 [![License](https://img.shields.io/cocoapods/l/ToastCollectionViewCell.svg?style=flat)](https://cocoapods.org/pods/ToastCollectionViewCell)
 [![Platform](https://img.shields.io/cocoapods/p/ToastCollectionViewCell.svg?style=flat)](https://cocoapods.org/pods/ToastCollectionViewCell)
 
-ToastCollectionViewCell is a Swift library that displays an animated toast controlled by the scroll, appearing in your UICollectionViewCells
 
 ## :star: What does it do ?
 
