@@ -19,7 +19,8 @@ extension UICollectionView {
 
 open class ToastCollectionViewDelegate: NSObject, UICollectionViewDelegate {
     
-    open var offset: Float = 75.0
+    open var offsetToComponent: Float = 0.0
+    open var componentMaximumHeightPosition: Float = 0.0
     open var collectionView: UICollectionView?
     
     private var lastContentOffset: CGFloat = 0.0
@@ -30,7 +31,6 @@ open class ToastCollectionViewDelegate: NSObject, UICollectionViewDelegate {
             return
         }
         
-        let thresold: Float = self.offset
         let visibleCells = collectionView.getOrderedVisibleCellsOfType(forCellType: ToastCollectionViewCell.self)
         
         for cellIndex in 0..<visibleCells.count {
@@ -52,16 +52,18 @@ open class ToastCollectionViewDelegate: NSObject, UICollectionViewDelegate {
             if cellIndex == 0 {
                 let topOffsetToBottomOfCell: Float = -1 * Float(topOffsetToCell - cellHeight)
                 // If offset between top of collectionview and bottom of cell is between 0 and thresold
-                if 0.0 ... thresold ~= topOffsetToBottomOfCell {
+                if 0.0 ... self.componentMaximumHeightPosition + self.offsetToComponent ~= topOffsetToBottomOfCell {
                     // If going up (Finger swipe down)
                     if self.lastContentOffset > scrollView.contentOffset.y {
-                        cell.shouldRaiseComponent(with: CGFloat(topOffsetToBottomOfCell))
+                        let position = CGFloat(topOffsetToBottomOfCell - self.offsetToComponent)
+                        cell.shouldRaiseComponent(with: position)
                     }
                         // If going down (Finger swipe up)
                     else if self.lastContentOffset < scrollView.contentOffset.y {
-                        cell.shouldDropComponent(with: CGFloat(thresold - topOffsetToBottomOfCell))
+                        let position = CGFloat(self.componentMaximumHeightPosition - topOffsetToBottomOfCell + self.offsetToComponent)
+                        cell.shouldDropComponent(with: position)
                     }
-                } else if topOffsetToBottomOfCell > thresold {
+                } else if topOffsetToBottomOfCell > self.componentMaximumHeightPosition {
                     cell.shouldEnsureComponentIsAtMaxPosition()
                 }
             }
@@ -69,14 +71,16 @@ open class ToastCollectionViewDelegate: NSObject, UICollectionViewDelegate {
                 let viewPortHeight: CGFloat = collectionView.frame.height
                 let bottomOffsetToBottomOfCell = -1 * Float(topOffsetToCell + viewPortHeight - cellHeight)
                 // If offset between bottom of collectionview and bottom of cell is between 0 and thresold
-                if 0.0 ... thresold ~= bottomOffsetToBottomOfCell {
+                if 0.0 ... self.componentMaximumHeightPosition + self.offsetToComponent ~= bottomOffsetToBottomOfCell {
                     // If going up (Finger swipe down)
                     if self.lastContentOffset > scrollView.contentOffset.y {
-                        cell.shouldDropComponent(with: CGFloat(bottomOffsetToBottomOfCell))
+                        let position = CGFloat(bottomOffsetToBottomOfCell)
+                        cell.shouldDropComponent(with: position)
                     }
-                        // If going down (Finger swipe up)
+                    // If going down (Finger swipe up)
                     else if self.lastContentOffset < scrollView.contentOffset.y {
-                        cell.shouldRaiseComponent(with: CGFloat(thresold - bottomOffsetToBottomOfCell))
+                        let position = CGFloat(self.componentMaximumHeightPosition - bottomOffsetToBottomOfCell)
+                        cell.shouldRaiseComponent(with: position)
                     }
                 } else if bottomOffsetToBottomOfCell < 0.0 {
                     cell.shouldEnsureComponentIsAtMaxPosition()

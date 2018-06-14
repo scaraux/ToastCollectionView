@@ -10,8 +10,9 @@ import UIKit
 
 open class ToastCollectionViewCell: UICollectionViewCell {
     
-    open var component: UIView?
-    open var componentOriginY: CGFloat = 0
+    open var componentMaximumHeight: CGFloat = 0.0
+    internal var component: UIView?
+    internal var componentOriginY: CGFloat = 0
     
     open func preRaiseComponent() {
         shouldEnsureComponentIsAtMaxPosition()
@@ -22,7 +23,7 @@ open class ToastCollectionViewCell: UICollectionViewCell {
             return
         }
         
-        component.frame.origin.y = self.componentOriginY - 75.0
+        component.frame.origin.y = self.componentOriginY - componentMaximumHeight
         //        if component.expanded == false {
         //            component.expand()
         //        }
@@ -39,10 +40,12 @@ open class ToastCollectionViewCell: UICollectionViewCell {
         guard let component = self.component else {
             return
         }
-        component.frame.origin.y = (self.componentOriginY - 75.0) + offset
+        component.frame.origin.y = (self.componentOriginY - componentMaximumHeight) + offset
     }
     
-    open func addComponent(view: UIView) {
+    open func addToastView(view: UIView, withMaximumHeightPosition: Float) {
+        
+        self.componentMaximumHeight = CGFloat(withMaximumHeightPosition)
         
         let positionX = (self.bounds.width / 2) - (view.frame.width / 2)
         let positionY = self.bounds.height

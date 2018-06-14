@@ -13,14 +13,30 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var delegate = ToastCollectionViewDelegate()
+    let data = [
+        DummyData(color: UIColor(hex: 0x74b9ff), name: "Blue"),
+        DummyData(color: UIColor(hex: 0xa29bfe), name: "Purple"),
+        DummyData(color: UIColor(hex: 0xfd79a8), name: "Pink"),
+        DummyData(color: UIColor(hex: 0x00b894), name: "Green"),
+        DummyData(color: UIColor(hex: 0x00cec9), name: "Turquoise"),
+        DummyData(color: UIColor(hex: 0xfdcb6e), name: "Yellow"),
+        DummyData(color: UIColor(hex: 0xe17055), name: "Orange"),
+        DummyData(color: UIColor(hex: 0xff7675), name: "Red")
+    ]
+    
+    var toastDelegate: ToastCollectionViewDelegate = {
+        let delegate = ToastCollectionViewDelegate()
+        delegate.componentMaximumHeightPosition = 75.0
+        delegate.offsetToComponent = 20
+        return delegate
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        delegate.collectionView = self.collectionView
+        toastDelegate.collectionView = self.collectionView
         self.collectionView.dataSource = self
-        self.collectionView.delegate = delegate
+        self.collectionView.delegate = toastDelegate
         self.collectionView.contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)
     }
     
@@ -30,8 +46,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+        let data = self.data[indexPath.item]
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ExampleCell", for: indexPath) as! ExampleCell
         cell.setNeedsLayout()
+        cell.configureCell(with: data)
         cell.layoutIfNeeded()
         
         if indexPath.item == 0 {
@@ -41,7 +60,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return self.data.count
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

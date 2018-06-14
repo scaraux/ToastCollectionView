@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02303E2A43B5EA2A6597BBACB943DC30 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582BE8E011B2E1D178F2F65B46ABC1F4 /* ReplaceMe.swift */; };
-		06736AA5B4F1BE9128828DFF9C01C211 /* ToastCollectionViewCell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 17C2594114368EDAB419C1E7CEB24B85 /* ToastCollectionViewCell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06736AA5B4F1BE9128828DFF9C01C211 /* ToastCollectionViewCell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F91A5F49111646759260CA6746108406 /* ToastCollectionViewCell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A5A913D93A300FDD8BAF2C015DEAD99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		0D4C1B185B429DFF645E29A731D41F00 /* ToastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B676CD39D6BD5EFEB0919620EBA095E /* ToastCollectionViewCell.swift */; };
-		11E9B4CC0B60E4B09EB450701EAFBC17 /* ToastCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7F178EB7349A97CA1D81DCA54A4B75 /* ToastCollectionViewCellDelegate.swift */; };
-		308E12214084D23D18D157AA638CF899 /* ToastCollectionViewCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7813CA10C582A1D446E0331038E53C4 /* ToastCollectionViewCell-dummy.m */; };
 		3F7FB1A0C95942DEF69CF18E2B7645B8 /* Pods-ToastCollectionViewCell_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3CAA621C5C10409306884363FF1FA2 /* Pods-ToastCollectionViewCell_Example-dummy.m */; };
 		59F41428C8A2FED69765E386B3B6B686 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		5E5EC6F9AA588DCBA8A9A63361129619 /* ToastCollectionViewCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3EC97C294BD774B063546F63FA6558 /* ToastCollectionViewCell-dummy.m */; };
+		89E8CBA374EFAC36F5BB48AF7E639859 /* ToastCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B196216E76C42F2D7A43F5385FDD2A9A /* ToastCollectionViewCellDelegate.swift */; };
 		8A067709FA32E846B1A747D83D2F301A /* Pods-ToastCollectionViewCell_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73014F0FAED0040F5E78E0AE40DCE74D /* Pods-ToastCollectionViewCell_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2350D99933A7CA6B2DB83D9425FEB71 /* ToastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4631A6368BF8B90CA65346E9770B94 /* ToastCollectionViewCell.swift */; };
 		B74807D4E16719A39E48393F3D51A63A /* Pods-ToastCollectionViewCell_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F83730EB6114188E31AA67EBF655642 /* Pods-ToastCollectionViewCell_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3DD0D81BC1316410BBEE218D380C048 /* Pods-ToastCollectionViewCell_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 653F491D446E395EE89E7EEA2D9074A9 /* Pods-ToastCollectionViewCell_Tests-dummy.m */; };
 		F85A6494B65127D2052F281E40A8DE37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
@@ -39,42 +38,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		17C2594114368EDAB419C1E7CEB24B85 /* ToastCollectionViewCell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ToastCollectionViewCell-umbrella.h"; sourceTree = "<group>"; };
-		1B2DC43BF039062D8F189E2C2E5C2EFC /* ToastCollectionViewCell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ToastCollectionViewCell.modulemap; sourceTree = "<group>"; };
 		23661F8CABC42B42C45937883131AFC6 /* Pods-ToastCollectionViewCell_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ToastCollectionViewCell_Example.modulemap"; sourceTree = "<group>"; };
 		24E928D122C067F04B741170D7480F01 /* Pods-ToastCollectionViewCell_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ToastCollectionViewCell_Example-frameworks.sh"; sourceTree = "<group>"; };
+		2854B4A8AD4A44CE4DB68B4FFD673C5C /* ToastCollectionViewCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ToastCollectionViewCell-prefix.pch"; sourceTree = "<group>"; };
 		2A59B6E973B96212F7F4653E8719782F /* Pods-ToastCollectionViewCell_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ToastCollectionViewCell_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2B676CD39D6BD5EFEB0919620EBA095E /* ToastCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastCollectionViewCell.swift; path = ToastCollectionViewCell/Classes/ToastCollectionViewCell.swift; sourceTree = "<group>"; };
 		3328E9414B9206F958642DC0B6AA4601 /* Pods-ToastCollectionViewCell_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ToastCollectionViewCell_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		365B392BBB0DEC06A22A261CD5452F03 /* ToastCollectionViewCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ToastCollectionViewCell.framework; path = ToastCollectionViewCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D3140FF4B0B0AC4AD1FDCFD5F137B7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3AE4CA8C753E05F93EB3ACE3342216D4 /* ToastCollectionViewCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ToastCollectionViewCell.xcconfig; sourceTree = "<group>"; };
 		42A57C210BCBEEEFA0FCD975D0F074A0 /* Pods-ToastCollectionViewCell_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ToastCollectionViewCell_Tests-resources.sh"; sourceTree = "<group>"; };
-		441D7D694ADDDDBF270D3C9A034271D1 /* ToastCollectionViewCell.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ToastCollectionViewCell.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5731C485AC847D313A1594074BE7D4D4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		582BE8E011B2E1D178F2F65B46ABC1F4 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ToastCollectionViewCell/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		4F4F8BFB3E1523DC9518DA36D462434A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5C7C74E61FA655CCC1DC41D9F5E9C8EE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		5F83730EB6114188E31AA67EBF655642 /* Pods-ToastCollectionViewCell_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ToastCollectionViewCell_Tests-umbrella.h"; sourceTree = "<group>"; };
 		653F491D446E395EE89E7EEA2D9074A9 /* Pods-ToastCollectionViewCell_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ToastCollectionViewCell_Tests-dummy.m"; sourceTree = "<group>"; };
-		6D7F178EB7349A97CA1D81DCA54A4B75 /* ToastCollectionViewCellDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastCollectionViewCellDelegate.swift; path = ToastCollectionViewCell/Classes/ToastCollectionViewCellDelegate.swift; sourceTree = "<group>"; };
 		73014F0FAED0040F5E78E0AE40DCE74D /* Pods-ToastCollectionViewCell_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ToastCollectionViewCell_Example-umbrella.h"; sourceTree = "<group>"; };
-		7394365FFC4C1A111F5D93EA8E7C61C8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83CE12BC3556DC8A25436010E3955B95 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		8CFE4A0540F203AC04F18791E0211447 /* ToastCollectionViewCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ToastCollectionViewCell-prefix.pch"; sourceTree = "<group>"; };
+		88673DF6BE3AD4FB0D8B9D842DED029E /* ToastCollectionViewCell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ToastCollectionViewCell.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		950F2806E66D719B179B360C1C0B49FD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95D795442AC44124C92B99B2503B8D0D /* ToastCollectionViewCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ToastCollectionViewCell.xcconfig; sourceTree = "<group>"; };
 		96BAEED387B1D4016C00BAE98D1B68D5 /* Pods-ToastCollectionViewCell_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ToastCollectionViewCell_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A530F9CA562B4FE44F5E82E4E6C68836 /* ToastCollectionViewCell.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ToastCollectionViewCell.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A9EBDA36C671E2C57C0B58F56CC1D03A /* Pods-ToastCollectionViewCell_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ToastCollectionViewCell_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B196216E76C42F2D7A43F5385FDD2A9A /* ToastCollectionViewCellDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastCollectionViewCellDelegate.swift; path = ToastCollectionViewCell/Classes/ToastCollectionViewCellDelegate.swift; sourceTree = "<group>"; };
 		B8281F4C3A733FC6717F9B50D9F85D07 /* Pods-ToastCollectionViewCell_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ToastCollectionViewCell_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BFD5E01F0234FBAE33B7BAEA06C75521 /* Pods-ToastCollectionViewCell_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ToastCollectionViewCell_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C072582830EF64AA7D3DCCA456C96EB4 /* Pods-ToastCollectionViewCell_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ToastCollectionViewCell_Tests.modulemap"; sourceTree = "<group>"; };
 		C6DF03A92FF5ED8DEB0D95FAD757785D /* Pods-ToastCollectionViewCell_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ToastCollectionViewCell_Example-resources.sh"; sourceTree = "<group>"; };
-		C7813CA10C582A1D446E0331038E53C4 /* ToastCollectionViewCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ToastCollectionViewCell-dummy.m"; sourceTree = "<group>"; };
 		C8BCDC70F0EF0BC3F42AAD97B3ED8195 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB3CAA621C5C10409306884363FF1FA2 /* Pods-ToastCollectionViewCell_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ToastCollectionViewCell_Example-dummy.m"; sourceTree = "<group>"; };
 		D1FB823E8E9FC92EFCB15FFD72426B59 /* Pods-ToastCollectionViewCell_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ToastCollectionViewCell_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		DA05ED4995644F8CBD3D9976514DA265 /* Pods_ToastCollectionViewCell_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ToastCollectionViewCell_Example.framework; path = "Pods-ToastCollectionViewCell_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA5A37FD63D0C5DDC2E626D91ACD793F /* Pods_ToastCollectionViewCell_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ToastCollectionViewCell_Tests.framework; path = "Pods-ToastCollectionViewCell_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB3EC97C294BD774B063546F63FA6558 /* ToastCollectionViewCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ToastCollectionViewCell-dummy.m"; sourceTree = "<group>"; };
+		DB4631A6368BF8B90CA65346E9770B94 /* ToastCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastCollectionViewCell.swift; path = ToastCollectionViewCell/Classes/ToastCollectionViewCell.swift; sourceTree = "<group>"; };
 		E562FC47A3CCEF350AB2439D58599A5C /* Pods-ToastCollectionViewCell_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ToastCollectionViewCell_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		F91A5F49111646759260CA6746108406 /* ToastCollectionViewCell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ToastCollectionViewCell-umbrella.h"; sourceTree = "<group>"; };
 		FBA81B31AAD6E92FFA065555AD307823 /* Pods-ToastCollectionViewCell_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ToastCollectionViewCell_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,20 +104,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		094C4713905B9A5F405BDF064F8609A4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7394365FFC4C1A111F5D93EA8E7C61C8 /* Info.plist */,
-				1B2DC43BF039062D8F189E2C2E5C2EFC /* ToastCollectionViewCell.modulemap */,
-				95D795442AC44124C92B99B2503B8D0D /* ToastCollectionViewCell.xcconfig */,
-				C7813CA10C582A1D446E0331038E53C4 /* ToastCollectionViewCell-dummy.m */,
-				8CFE4A0540F203AC04F18791E0211447 /* ToastCollectionViewCell-prefix.pch */,
-				17C2594114368EDAB419C1E7CEB24B85 /* ToastCollectionViewCell-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ToastCollectionViewCell";
-			sourceTree = "<group>";
-		};
 		22834F8B3EED12E0CF015878B61E8376 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +111,30 @@
 				329FE78AD94DDB90ADF8AD8205ED556D /* Pods-ToastCollectionViewCell_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2ABA2E6559D99A88572259870FBA4564 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F4F8BFB3E1523DC9518DA36D462434A /* Info.plist */,
+				88673DF6BE3AD4FB0D8B9D842DED029E /* ToastCollectionViewCell.modulemap */,
+				3AE4CA8C753E05F93EB3ACE3342216D4 /* ToastCollectionViewCell.xcconfig */,
+				DB3EC97C294BD774B063546F63FA6558 /* ToastCollectionViewCell-dummy.m */,
+				2854B4A8AD4A44CE4DB68B4FFD673C5C /* ToastCollectionViewCell-prefix.pch */,
+				F91A5F49111646759260CA6746108406 /* ToastCollectionViewCell-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ToastCollectionViewCell";
+			sourceTree = "<group>";
+		};
+		31CF7954B93F6CDBD6FABC9F40DECE8E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				39D3140FF4B0B0AC4AD1FDCFD5F137B7 /* LICENSE */,
+				5C7C74E61FA655CCC1DC41D9F5E9C8EE /* README.md */,
+				A530F9CA562B4FE44F5E82E4E6C68836 /* ToastCollectionViewCell.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		329FE78AD94DDB90ADF8AD8205ED556D /* Pods-ToastCollectionViewCell_Tests */ = {
@@ -177,42 +185,23 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				B0405D92D7CC97B50279441661B66A86 /* Development Pods */,
+				D02F312A51B30D3FC25B80EFD8292825 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				BA627C11A9112ABA6AB9FF381AADCC9C /* Products */,
 				22834F8B3EED12E0CF015878B61E8376 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		901391E3FA67C5F2543E7E7E257E0E6B /* ToastCollectionViewCell */ = {
+		A92A44405A806EB68E643437F8982CC3 /* ToastCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				582BE8E011B2E1D178F2F65B46ABC1F4 /* ReplaceMe.swift */,
-				2B676CD39D6BD5EFEB0919620EBA095E /* ToastCollectionViewCell.swift */,
-				6D7F178EB7349A97CA1D81DCA54A4B75 /* ToastCollectionViewCellDelegate.swift */,
-				A42BF549345EF1D59E72479E3F3CE36B /* Pod */,
-				094C4713905B9A5F405BDF064F8609A4 /* Support Files */,
+				DB4631A6368BF8B90CA65346E9770B94 /* ToastCollectionViewCell.swift */,
+				B196216E76C42F2D7A43F5385FDD2A9A /* ToastCollectionViewCellDelegate.swift */,
+				31CF7954B93F6CDBD6FABC9F40DECE8E /* Pod */,
+				2ABA2E6559D99A88572259870FBA4564 /* Support Files */,
 			);
 			name = ToastCollectionViewCell;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		A42BF549345EF1D59E72479E3F3CE36B /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				83CE12BC3556DC8A25436010E3955B95 /* LICENSE */,
-				5731C485AC847D313A1594074BE7D4D4 /* README.md */,
-				441D7D694ADDDDBF270D3C9A034271D1 /* ToastCollectionViewCell.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		B0405D92D7CC97B50279441661B66A86 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				901391E3FA67C5F2543E7E7E257E0E6B /* ToastCollectionViewCell */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		BA627C11A9112ABA6AB9FF381AADCC9C /* Products */ = {
@@ -231,6 +220,14 @@
 				5E0D919E635D23B70123790B8308F8EF /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D02F312A51B30D3FC25B80EFD8292825 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A92A44405A806EB68E643437F8982CC3 /* ToastCollectionViewCell */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,7 +300,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8BBC1986521B3AA93A22AB0E38962D7 /* Build configuration list for PBXNativeTarget "ToastCollectionViewCell" */;
 			buildPhases = (
-				6E87DB37B1098FB40D52C4BDEEA4C8A4 /* Sources */,
+				671ECAA3E6BF975DC7D62FA2AE03CF55 /* Sources */,
 				7EDDE3C765706A77F57BEE291DBA9E58 /* Frameworks */,
 				F4CD6373A7A6D9A74B45A51A6DD85400 /* Headers */,
 			);
@@ -353,14 +350,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E87DB37B1098FB40D52C4BDEEA4C8A4 /* Sources */ = {
+		671ECAA3E6BF975DC7D62FA2AE03CF55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02303E2A43B5EA2A6597BBACB943DC30 /* ReplaceMe.swift in Sources */,
-				308E12214084D23D18D157AA638CF899 /* ToastCollectionViewCell-dummy.m in Sources */,
-				0D4C1B185B429DFF645E29A731D41F00 /* ToastCollectionViewCell.swift in Sources */,
-				11E9B4CC0B60E4B09EB450701EAFBC17 /* ToastCollectionViewCellDelegate.swift in Sources */,
+				5E5EC6F9AA588DCBA8A9A63361129619 /* ToastCollectionViewCell-dummy.m in Sources */,
+				A2350D99933A7CA6B2DB83D9425FEB71 /* ToastCollectionViewCell.swift in Sources */,
+				89E8CBA374EFAC36F5BB48AF7E639859 /* ToastCollectionViewCellDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +423,7 @@
 		};
 		27CECBFF8F0C3CE29D75A9BF9438E4D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95D795442AC44124C92B99B2503B8D0D /* ToastCollectionViewCell.xcconfig */;
+			baseConfigurationReference = 3AE4CA8C753E05F93EB3ACE3342216D4 /* ToastCollectionViewCell.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -459,7 +455,7 @@
 		};
 		41B106C2CF6A068C847B0531BD9043C1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95D795442AC44124C92B99B2503B8D0D /* ToastCollectionViewCell.xcconfig */;
+			baseConfigurationReference = 3AE4CA8C753E05F93EB3ACE3342216D4 /* ToastCollectionViewCell.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
