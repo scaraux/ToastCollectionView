@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ToastCollectionViewCell_Example' do
+  pod 'ToastCollectionViewCell', :path => '../'
+
+  target 'ToastCollectionViewCell_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
