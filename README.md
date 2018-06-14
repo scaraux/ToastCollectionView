@@ -8,7 +8,7 @@
 
 ## :star: What does it do ?
 
-ToastCollectionViewCell is a Swift library that displays an animated toast controlled by the scroll, appearing in your UICollectionViewCells
+ToastCollectionViewCell is a Swift CollectionViewCell that displays a view when scrolling, reminding of a toast popping out of a toaster 🍞
 
 ##  📲 Example
 
