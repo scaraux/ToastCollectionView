@@ -7,11 +7,11 @@
 
 ## :star: What does it do ?
 
+ToastCollectionViewCell is a Swift CollectionViewCell that displays a view when scrolling, reminding of a toast popping out of a toaster 🍞
+
 <p align="center">
     <img src="Artwork/example.gif" width="250" alt="Example Toast Collection View"/>
 </p>
-
-ToastCollectionViewCell is a Swift CollectionViewCell that displays a view when scrolling, reminding of a toast popping out of a toaster 🍞
 
 ##  📲 Example
 
