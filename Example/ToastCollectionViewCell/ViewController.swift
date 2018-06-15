@@ -53,7 +53,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         cell.configureCell(with: data)
         cell.layoutIfNeeded()
         
-        if indexPath.item == 0 {
+        // Pre raise visible cells
+        if indexPath.item == 0 || indexPath.item == 1 {
             cell.preRaiseComponent()
         }
         return cell

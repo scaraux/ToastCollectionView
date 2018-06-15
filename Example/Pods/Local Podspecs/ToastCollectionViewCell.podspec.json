@@ -4,16 +4,16 @@
   "swift_version": "4.0",
   "summary": "A short description of ToastCollectionViewCell.",
   "description": "A UICollectionView cell that shows and animates a toast when appearing on screen.",
-  "homepage": "https://github.com/gottingoscar@gmail.com/ToastCollectionViewCell",
+  "homepage": "https://github.com/frenchfalcon/ToastCollectionViewCell",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "gottingoscar@gmail.com": "gottingoscar@gmail.com"
+    "Oscar Gotting": "gottingoscar@gmail.com"
   },
   "source": {
-    "git": "https://github.com/gottingoscar@gmail.com/ToastCollectionViewCell.git",
+    "git": "https://github.com/frenchfalcon/ToastCollectionViewCell.git",
     "tag": "0.1.0"
   },
   "platforms": {

@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ToastCollectionViewCell: b9d11fc20615d1810ee682bb2a45281b9695af41
+  ToastCollectionViewCell: 4036ca907f4aed50fb19e0d133dfe1b49a09e9df
 
 PODFILE CHECKSUM: faaf15ea6ed7e503dfb0a7937ea383010718cde0
 

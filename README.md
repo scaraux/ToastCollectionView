@@ -91,6 +91,29 @@ override func layoutIfNeeded() {
 }
 ```
 
+### Extras
+
+The `ToastCollectionViewCell` offers a `preRaiseToastView()` method that allows you to force some Toast views to be risen. It's useful for example for the first cells that appears when you present the CollectionView, so they don't pop only when the user starts to scroll.
+
+
+### Delegation
+
+By implementing the `ToastCollectionViewCellDelegate`, you can be notified when any of your Toast views get to
+their top position, meaning they are fully raised.
+
+You can then trigger an action on the given Toast view.
+
+#### Example:
+
+```Swift
+class ExampleCell: ToastCollectionViewCell, ToastCollectionViewCellDelegate {
+  func onToastFullyRaised(toast: UIView) {
+		let toast = toast as! MyToastView
+		toast.doSomething()
+  }
+}
+```
+
 ## 👱 Author
 
 Oscar Gotting, gottingoscar@gmail.com

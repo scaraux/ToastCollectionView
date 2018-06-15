@@ -10,50 +10,25 @@ import Foundation
 import UIKit
 import ToastCollectionViewCell
 
-class ToastComponent: UIView {
-    
-    var title: String = "" {
-        didSet {
-            self.label.text = title
-        }
-    }
-    
-    var label: UILabel = {
-       let label = UILabel(frame: .zero)
-        label.textAlignment = .center
-        label.textColor = UIColor.white
-        return label
-    }()
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setup()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setup()
-    }
-    
-    func setup() {
-        self.clipsToBounds = true
-        self.layer.cornerRadius = 10.0
-        self.backgroundColor = UIColor.lightGray.withAlphaComponent(0.9)
-        self.label.frame = self.frame
-        self.addSubview(self.label)
-    }
-}
 class ExampleCell: ToastCollectionViewCell {
     
-    var toastView = ToastComponent(frame: CGRect(x: 0, y: 0, width: 150, height: 50))
+    var toastView = MyToastView(frame: CGRect(x: 0, y: 0, width: 150, height: 50))
     
     func configureCell(with object: DummyData) {
         self.backgroundColor = object.color!
         self.toastView.title = object.colorName!
+        self.delegate = self
     }
     
     override func layoutIfNeeded() {
         super.layoutIfNeeded()
         addToastView(view: self.toastView, withMaximumHeightPosition: 75.0)
+    }
+}
+
+extension ExampleCell: ToastCollectionViewCellDelegate {
+    func onToastFullyRaised(toast: UIView) {
+        let toast = toast as! MyToastView
+        toast.doSomething()
     }
 }

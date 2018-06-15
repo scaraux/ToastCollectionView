@@ -8,39 +8,46 @@
 import Foundation
 import UIKit
 
+
+public protocol ToastCollectionViewCellDelegate {
+    func onToastFullyRaised(toast: UIView)
+}
+
 open class ToastCollectionViewCell: UICollectionViewCell {
     
+    open var delegate: ToastCollectionViewCellDelegate?
     open var componentMaximumHeight: CGFloat = 0.0
-    internal var component: UIView?
+    internal var toastView: UIView?
     internal var componentOriginY: CGFloat = 0
+    private var maximumPositionReached: Bool = false
     
-    open func preRaiseComponent() {
+    open func preRaiseToastView() {
         shouldEnsureComponentIsAtMaxPosition()
     }
     
     func shouldEnsureComponentIsAtMaxPosition() {
-        guard let component = self.component else {
+        guard let view = self.toastView else {
             return
         }
-        
-        component.frame.origin.y = self.componentOriginY - componentMaximumHeight
-        //        if component.expanded == false {
-        //            component.expand()
-        //        }
+        view.frame.origin.y = self.componentOriginY - componentMaximumHeight
+        if self.maximumPositionReached == false {
+            delegate?.onToastFullyRaised(toast: view)
+            self.maximumPositionReached = true
+        }
     }
     
     func shouldRaiseComponent(with offset: CGFloat) {
-        guard let component = self.component else {
+        guard let view = self.toastView else {
             return
         }
-        component.frame.origin.y = self.componentOriginY - offset
+        view.frame.origin.y = self.componentOriginY - offset
     }
     
     func shouldDropComponent(with offset: CGFloat) {
-        guard let component = self.component else {
+        guard let view = self.toastView else {
             return
         }
-        component.frame.origin.y = (self.componentOriginY - componentMaximumHeight) + offset
+        view.frame.origin.y = (self.componentOriginY - componentMaximumHeight) + offset
     }
     
     open func addToastView(view: UIView, withMaximumHeightPosition: Float) {
@@ -53,14 +60,16 @@ open class ToastCollectionViewCell: UICollectionViewCell {
         view.frame = CGRect(x: positionX, y: positionY, width: view.frame.width, height: view.frame.height)
         
         self.componentOriginY = positionY
-        self.component = view
+        self.toastView = view
         
         addSubview(view)
     }
     
     override open func prepareForReuse() {
-        self.component?.removeFromSuperview()
-        //        self.component?.expanded = false
+        self.maximumPositionReached = false
+        self.toastView?.removeFromSuperview()
+        self.toastView = nil
+        self.delegate = nil
         super.prepareForReuse()
     }
 }
