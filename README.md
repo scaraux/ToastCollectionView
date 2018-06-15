@@ -5,12 +5,11 @@
 [![License](https://img.shields.io/cocoapods/l/ToastCollectionViewCell.svg?style=flat)](https://cocoapods.org/pods/ToastCollectionViewCell)
 [![Platform](https://img.shields.io/cocoapods/p/ToastCollectionViewCell.svg?style=flat)](https://cocoapods.org/pods/ToastCollectionViewCell)
 
+## :star: What does it do ?
 
 <p align="center">
-    <img src="Artwork/example.gif" width="300" alt="Example Toast Collection View"/>
+    <img src="Artwork/example.gif" width="250" alt="Example Toast Collection View"/>
 </p>
-
-## :star: What does it do ?
 
 ToastCollectionViewCell is a Swift CollectionViewCell that displays a view when scrolling, reminding of a toast popping out of a toaster 🍞
 
