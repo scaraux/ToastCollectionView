@@ -6,6 +6,10 @@
 [![Platform](https://img.shields.io/cocoapods/p/ToastCollectionViewCell.svg?style=flat)](https://cocoapods.org/pods/ToastCollectionViewCell)
 
 
+<p align="center">
+    <img src="Artwork/example.gif" width="400" alt="Example Toast Collection View"/>
+</p>
+
 ## :star: What does it do ?
 
 ToastCollectionViewCell is a Swift CollectionViewCell that displays a view when scrolling, reminding of a toast popping out of a toaster 🍞
@@ -109,8 +113,8 @@ You can then trigger an action on the given Toast view.
 ```Swift
 class ExampleCell: ToastCollectionViewCell, ToastCollectionViewCellDelegate {
   func onToastFullyRaised(toast: UIView) {
-		let toast = toast as! MyToastView
-		toast.doSomething()
+	  let toast = toast as! MyToastView
+	  toast.doSomething()
   }
 }
 ```
