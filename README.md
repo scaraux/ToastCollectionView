@@ -7,7 +7,7 @@
 
 
 <p align="center">
-    <img src="Artwork/example.gif" width="400" alt="Example Toast Collection View"/>
+    <img src="Artwork/example.gif" width="300" alt="Example Toast Collection View"/>
 </p>
 
 ## :star: What does it do ?
