@@ -37,7 +37,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         toastDelegate.collectionView = self.collectionView
         self.collectionView.dataSource = self
         self.collectionView.delegate = toastDelegate
-        self.collectionView.contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)
     }
     
     override func didReceiveMemoryWarning() {
@@ -49,13 +48,12 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let data = self.data[indexPath.item]
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ExampleCell", for: indexPath) as! ExampleCell
-        cell.setNeedsLayout()
         cell.configureCell(with: data)
         cell.layoutIfNeeded()
         
         // Pre raise visible cells
         if indexPath.item == 0 || indexPath.item == 1 {
-            cell.preRaiseComponent()
+            cell.preRaiseToastView()
         }
         return cell
     }

@@ -51,7 +51,6 @@ open class ToastCollectionViewCell: UICollectionViewCell {
     }
     
     open func addToastView(view: UIView, withMaximumHeightPosition: Float) {
-        
         self.componentMaximumHeight = CGFloat(withMaximumHeightPosition)
         
         let positionX = (self.bounds.width / 2) - (view.frame.width / 2)

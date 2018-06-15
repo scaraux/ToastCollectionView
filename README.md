@@ -80,7 +80,8 @@ class ViewController: UIViewController {
 1. In your cell, instantiate the Toast view you created earlier
 2. Override the `layoutIfNeeded()`  method
 3. In  `layoutIfNeeded()`, pass the toast view to the `addToastView` method
-4. You are done !
+4. In your `cellForItemAt` method, call the cell's `layoutIfNeeded` before returning it
+5. You are done !
 
 
 ```swift

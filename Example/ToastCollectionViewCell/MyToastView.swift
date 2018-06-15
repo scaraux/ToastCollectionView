@@ -36,8 +36,7 @@ class MyToastView: UIView {
     }
     
     func doSomething() {
-        print(title)
-        self.label.textColor = UIColor.red
+//        self.label.textColor = UIColor.red
     }
     
     func setup() {
