@@ -12,23 +12,22 @@ import ToastCollectionViewCell
 
 class ExampleCell: ToastCollectionViewCell {
     
-    var toastView = MyToastView(frame: CGRect(x: 0, y: 0, width: 150, height: 50))
+    var toast = MyToastView(frame: CGRect(x: 0, y: 0, width: 150, height: 50))
     
-    func configureCell(with object: DummyData) {
-        self.backgroundColor = object.color!
-        self.toastView.title = object.colorName!
+    func configureCell(with data: DummyData) {
         self.delegate = self
+        self.backgroundColor = data.color!
+        self.toast.title = data.colorName!
     }
-    
-    override func layoutIfNeeded() {
-        super.layoutIfNeeded()
-        addToastView(view: self.toastView, withMaximumHeightPosition: 75.0)
+
+    override func toastViewForCell() -> UIView? {
+        return self.toast
     }
 }
 
 extension ExampleCell: ToastCollectionViewCellDelegate {
     func onToastFullyRaised(toast: UIView) {
-        let toast = toast as! MyToastView
-        toast.doSomething()
+        let view = toast as! MyToastView
+        view.doSomething()
     }
 }

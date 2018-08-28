@@ -237,8 +237,9 @@
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = DBEPTECPFM;
 						LastSwiftMigration = 0900;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -526,7 +527,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F0F5B9C6E289C86378A517F7 /* Pods-ToastCollectionViewCell_Tests.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -550,7 +552,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A7B8D8CEE1E8459188E47DD /* Pods-ToastCollectionViewCell_Tests.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

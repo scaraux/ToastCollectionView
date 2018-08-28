@@ -26,7 +26,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     var toastDelegate: ToastCollectionViewDelegate = {
         let delegate = ToastCollectionViewDelegate()
-        delegate.componentMaximumHeightPosition = 75.0
+        delegate.maxPositionForComponent = 75.0
         delegate.offsetToComponent = 20
         return delegate
     }()
@@ -49,11 +49,10 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ExampleCell", for: indexPath) as! ExampleCell
         cell.configureCell(with: data)
-        cell.layoutIfNeeded()
         
         // Pre raise visible cells
         if indexPath.item == 0 || indexPath.item == 1 {
-            cell.preRaiseToastView()
+            cell.preRaiseToastView(toPosition: 75.0)
         }
         return cell
     }

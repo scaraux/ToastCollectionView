@@ -19,8 +19,8 @@ extension UICollectionView {
 
 open class ToastCollectionViewDelegate: NSObject, UICollectionViewDelegate {
     
-    open var offsetToComponent: Float = 0.0
-    open var componentMaximumHeightPosition: Float = 0.0
+    open var offsetToComponent: Float = 20.0
+    open var maxPositionForComponent: Float = 75.0
     open var collectionView: UICollectionView?
     
     private var lastContentOffset: CGFloat = 0.0
@@ -52,38 +52,38 @@ open class ToastCollectionViewDelegate: NSObject, UICollectionViewDelegate {
             if cellIndex == 0 {
                 let topOffsetToBottomOfCell: Float = -1 * Float(topOffsetToCell - cellHeight)
                 // If offset between top of collectionview and bottom of cell is between 0 and thresold
-                if 0.0 ... self.componentMaximumHeightPosition + self.offsetToComponent ~= topOffsetToBottomOfCell {
+                if 0.0 ... self.maxPositionForComponent + self.offsetToComponent ~= topOffsetToBottomOfCell {
                     // If going up (Finger swipe down)
                     if self.lastContentOffset > scrollView.contentOffset.y {
                         let position = CGFloat(topOffsetToBottomOfCell - self.offsetToComponent)
-                        cell.shouldRaiseComponent(with: position)
+                        cell.shouldRaiseComponent(with: position, maxPosition: CGFloat(maxPositionForComponent))
                     }
                         // If going down (Finger swipe up)
                     else if self.lastContentOffset < scrollView.contentOffset.y {
-                        let position = CGFloat(self.componentMaximumHeightPosition - topOffsetToBottomOfCell + self.offsetToComponent)
-                        cell.shouldDropComponent(with: position)
+                        let position = CGFloat(self.maxPositionForComponent - topOffsetToBottomOfCell + self.offsetToComponent)
+                        cell.shouldDropComponent(with: position, maxPosition: CGFloat(maxPositionForComponent))
                     }
-                } else if topOffsetToBottomOfCell > self.componentMaximumHeightPosition {
-                    cell.shouldEnsureComponentIsAtMaxPosition()
+                } else if topOffsetToBottomOfCell > self.maxPositionForComponent {
+                    cell.shouldEnsureComponentIsAtMaxPosition(maximumPosition: CGFloat(maxPositionForComponent))
                 }
             }
             else if cellIndex == visibleCells.count - 1 {
                 let viewPortHeight: CGFloat = collectionView.frame.height
                 let bottomOffsetToBottomOfCell = -1 * Float(topOffsetToCell + viewPortHeight - cellHeight)
                 // If offset between bottom of collectionview and bottom of cell is between 0 and thresold
-                if 0.0 ... self.componentMaximumHeightPosition + self.offsetToComponent ~= bottomOffsetToBottomOfCell {
+                if 0.0 ... self.maxPositionForComponent + self.offsetToComponent ~= bottomOffsetToBottomOfCell {
                     // If going up (Finger swipe down)
                     if self.lastContentOffset > scrollView.contentOffset.y {
                         let position = CGFloat(bottomOffsetToBottomOfCell)
-                        cell.shouldDropComponent(with: position)
+                        cell.shouldDropComponent(with: position, maxPosition: CGFloat(maxPositionForComponent))
                     }
                     // If going down (Finger swipe up)
                     else if self.lastContentOffset < scrollView.contentOffset.y {
-                        let position = CGFloat(self.componentMaximumHeightPosition - bottomOffsetToBottomOfCell)
-                        cell.shouldRaiseComponent(with: position)
+                        let position = CGFloat(self.maxPositionForComponent - bottomOffsetToBottomOfCell)
+                        cell.shouldRaiseComponent(with: position, maxPosition: CGFloat(maxPositionForComponent))
                     }
                 } else if bottomOffsetToBottomOfCell < 0.0 {
-                    cell.shouldEnsureComponentIsAtMaxPosition()
+                    cell.shouldEnsureComponentIsAtMaxPosition(maximumPosition: CGFloat(maxPositionForComponent))
                 }
             }
         }
