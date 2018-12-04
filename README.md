@@ -1,10 +1,10 @@
 # ToastCollectionView
 
-[![CIStatus](https://img.shields.io/travis/scaraux/ToastCollectionViewCell.svg?style=flat)](https://travis-ci.org/scaraux/ToastCollectionViewCel)
-[![Version](https://img.shields.io/cocoapods/v/ToastCollectionViewCell.svg?style=flat)](https://cocoapods.org/pods/ToastCollectionViewCell)
-[![License](https://img.shields.io/cocoapods/l/ToastCollectionViewCell.svg?style=flat)](https://cocoapods.org/pods/ToastCollectionViewCell)
-[![Platform](https://img.shields.io/cocoapods/p/ToastCollectionViewCell.svg?style=flat)](https://cocoapods.org/pods/ToastCollectionViewCell)
-[![Swift 4          support](https://img.shields.io/badge/Swift-4-orange.svg?style=flat)](https://cocoapods.org/pods/ToastCollectionViewCell)
+[![CIStatus](https://img.shields.io/travis/scaraux/ToastCollectionViewCell.svg?style=flat)](https://travis-ci.org/scaraux/ToastCollectionViewCell)
+[![Version](https://img.shields.io/cocoapods/v/ToastCollectionView.svg?style=flat)](https://cocoapods.org/pods/ToastCollectionView)
+[![License](https://img.shields.io/cocoapods/l/ToastCollectionView.svg?style=flat)](https://cocoapods.org/pods/ToastCollectionView)
+[![Platform](https://img.shields.io/cocoapods/p/ToastCollectionView.svg?style=flat)](https://cocoapods.org/pods/ToastCollectionView)
+[![Swift 4          support](https://img.shields.io/badge/Swift-4-orange.svg?style=flat)](https://cocoapods.org/pods/ToastCollectionView)
 
 ## :star: What does it do ?
 
