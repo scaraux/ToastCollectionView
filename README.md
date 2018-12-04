@@ -30,7 +30,7 @@ ToastCollectionView is available through [CocoaPods](https://cocoapods.org). To 
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'ToastCollectionViewCell'
+pod 'ToastCollectionView'
 ```
 
 ## 😏 Usage
@@ -60,6 +60,8 @@ class MyToastView: UIView {
 #### Example:
 
 ```swift
+import ToastCollectionView
+
 class ViewController: UIViewController {
 
 	var collectionView: ToastCollectionView?
@@ -130,4 +132,4 @@ Oscar Gotting ([@Scaraux](https://twitter.com/scaraux))
 
 ## 🚔 License
 
-ToastCollectionViewCell is available under the MIT license. See the LICENSE file for more info.
+ToastCollectionView is available under the MIT license. See the LICENSE file for more info.
