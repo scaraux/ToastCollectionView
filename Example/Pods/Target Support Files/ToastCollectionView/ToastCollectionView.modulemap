@@ -1,0 +1,6 @@
+framework module ToastCollectionView {
+  umbrella header "ToastCollectionView-umbrella.h"
+
+  export *
+  module * { export * }
+}

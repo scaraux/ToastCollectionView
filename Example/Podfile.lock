@@ -1,0 +1,16 @@
+PODS:
+  - ToastCollectionView (0.2.0)
+
+DEPENDENCIES:
+  - ToastCollectionView (from `../`)
+
+EXTERNAL SOURCES:
+  ToastCollectionView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ToastCollectionView: 896aca8d0dfeb8dc6cbde9beadd85279a5536e9c
+
+PODFILE CHECKSUM: 67dd48171135631cde1f028d109e169c9bb76598
+
+COCOAPODS: 1.6.0.beta.1
