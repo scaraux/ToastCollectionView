@@ -7,59 +7,34 @@
 
 import Foundation
 
-class _UICollectionViewDelegateProxy: NSObject,  UICollectionViewDelegate {
-    
-    weak var _userDelegate:  UICollectionViewDelegate?
-    weak var _selfDelegate:  UICollectionViewDelegate?
-    
-    override func responds(to aSelector: Selector!) -> Bool {
-        return super.responds(to: aSelector) || _userDelegate?.responds(to: aSelector) == true
-    }
-    
-    override func forwardingTarget(for aSelector: Selector!) -> Any? {
-        
-        if _userDelegate?.responds(to: aSelector) == true {
-            return _userDelegate
-        }
-        else {
-            return super.forwardingTarget(for: aSelector)
-        }
-    }
-    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        _selfDelegate?.scrollViewDidScroll?(scrollView)
-        _userDelegate?.scrollViewDidScroll?(scrollView)
-    }
-}
-
 open class ToastCollectionView: UICollectionView, UICollectionViewDelegate {
     
     open var offsetToComponent: Float = 20.0
     open var maxPositionForComponent: Float = 75.0
     
     private var lastContentOffset: CGFloat = 0.0
-    private var _delegateProxy = _UICollectionViewDelegateProxy()
+    private var delegateProxy = UICollectionViewDelegateProxy()
 
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        super.delegate = _delegateProxy
-        self._delegateProxy._selfDelegate = self
+        super.delegate = delegateProxy
+        self.delegateProxy._selfDelegate = self
     }
     
     public override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: layout)
-        super.delegate = _delegateProxy
-        self._delegateProxy._selfDelegate = self
+        super.delegate = delegateProxy
+        self.delegateProxy._selfDelegate = self
     }
 
     open override var delegate: UICollectionViewDelegate? {
         get {
-            return _delegateProxy._userDelegate
+            return delegateProxy._userDelegate
         }
         set {
-            self._delegateProxy._userDelegate = newValue;
+            self.delegateProxy._userDelegate = newValue;
             super.delegate = nil
-            super.delegate = _delegateProxy
+            super.delegate = delegateProxy
         }
     }
     
