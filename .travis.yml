@@ -9,4 +9,4 @@ before_install:
  - gem install cocoapods
 
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/ToastCollectionViewCell.xcworkspace -scheme ToastCollectionViewCell-Example -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.4' ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/ToastCollectionView.xcworkspace -scheme ToastCollectionView-Example -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.4' ONLY_ACTIVE_ARCH=NO | xcpretty
