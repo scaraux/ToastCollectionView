@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ToastCollectionView_Example' do
+  pod 'ToastCollectionView', :path => '../'
+
+  target 'ToastCollectionView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
