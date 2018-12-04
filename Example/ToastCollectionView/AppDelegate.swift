@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ToastCollectionView
 //
-//  Created by gottingoscar@gmail.com on 12/03/2018.
+//  Created by gottingoscar@gmail.com on 06/13/2018.
 //  Copyright (c) 2018 gottingoscar@gmail.com. All rights reserved.
 //
 
@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
